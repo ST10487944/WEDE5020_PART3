@@ -37,4 +37,5 @@ This ia a website I made for company called BrightFuture Tutoring. It's for a sc
 4. CSS-Tricks website
 5. Stack Overflow(for coding questions)
 
-This website was made for a school project(assignment). 
+This website was made for a school project(assignment).
+
