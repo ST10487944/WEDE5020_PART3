@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
+
+# Allow search engines to index important pages
+Allow: /index.html
+Allow: /about.html
+Allow: /tutors.html
+Allow: /contact_us.html
+Allow: /enquiry.html
+
+# Sitemap location
+Sitemap: https://brightfuturetutoring.com/sitemap.xml

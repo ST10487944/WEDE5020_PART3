@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enquire about BrightFuture Tutoring Services - Get information about our programs, pricing, and availability">
+    <title>Enquiry | BrightFuture Tutoring Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="_images/logo.png.jpg" alt="BrightFuture Logo">
+            
+            <nav id="toplinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="tutors.html">Our Tutors</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                    <li class="currentPage" ><a href="enquiry.html">Enquiry</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="enquiry-hero">
+                <h1>Get More Information</h1>
+                <p>Have questions about our tutoring services? We're here to help!</p>
+            </section>
+
+            <section id="enquiry-form">
+                <h2>Send Us Your Enquiry</h2>
+                
+                <form id="enquiryForm" action="/submit-enquiry" method="POST">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3>Your Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="0761234567">
+                        </div>
+                    </div>
+
+                    <!-- Enquiry Details -->
+                    <div class="form-section">
+                        <h3>Enquiry Details</h3>
+                        
+                        <div class="form-group">
+                            <label for="enquiryType">What are you enquiring about? *</label>
+                            <select id="enquiryType" name="enquiryType" required>
+                                <option value="">Please select</option>
+                                <option value="tutoring">One-on-One Tutoring</option>
+                                <option value="group">Group Sessions</option>
+                                <option value="membership">Membership Plans</option>
+                                <option value="pricing">Pricing Information</option>
+                                <option value="tutor">Tutor Availability</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="studentGrade">Student Grade Level</label>
+                            <select id="studentGrade" name="studentGrade">
+                                <option value="">Select Grade</option>
+                                <option value="8">Grade 8</option>
+                                <option value="9">Grade 9</option>
+                                <option value="10">Grade 10</option>
+                                <option value="11">Grade 11</option>
+                                <option value="12">Grade 12</option>
+                                <option value="adult">Adult Learner</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subjects">Subjects of Interest</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="subjects" value="math"> Mathematics</label>
+                                <label><input type="checkbox" name="subjects" value="science"> Physical Science</label>
+                                <label><input type="checkbox" name="subjects" value="biology"> Life Sciences</label>
+                                <label><input type="checkbox" name="subjects" value="english"> English</label>
+                                <label><input type="checkbox" name="subjects" value="afrikaans"> Afrikaans</label>
+                                <label><input type="checkbox" name="subjects" value="accounting"> Accounting</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="urgency">How soon do you need help?</label>
+                            <select id="urgency" name="urgency">
+                                <option value="">Select urgency</option>
+                                <option value="immediate">Immediately</option>
+                                <option value="week">Within a week</option>
+                                <option value="month">Within a month</option>
+                                <option value="info">Just gathering information</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Please tell us more about what you're looking for..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Preferred Contact -->
+                    <div class="form-section">
+                        <h3>Preferred Contact Method</h3>
+                        <div class="radio-group">
+                            <label><input type="radio" name="contactMethod" value="email" checked> Email</label>
+                            <label><input type="radio" name="contactMethod" value="phone"> Phone Call</label>
+                            <label><input type="radio" name="contactMethod" value="whatsapp"> WhatsApp</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Enquiry</button>
+                </form>
+            </section>
+
+            <!-- Response Section (shown after form submission) -->
+            <section id="response-section" style="display: none;">
+                <div class="response-message">
+                    <h2>Thank You for Your Enquiry!</h2>
+                    <p>We've received your enquiry and will get back to you within 24 hours.</p>
+                    <div id="response-details"></div>
+                    <button id="new-enquiry" class="btn">Submit Another Enquiry</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 BrightFuture Tutoring Services. All rights reserved.</p>
+            <nav id="bottomlinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="tutors.html">Our Tutors</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                    <li class="currentPage"><a href="enquiry.html">Enquiry</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="form-validation.js"></script>
+</body>
+</html>
